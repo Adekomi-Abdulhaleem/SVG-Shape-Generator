@@ -1,0 +1,78 @@
+body {margin: 0;
+      padding: 0;
+      background: -webkit-linear-gradient(-45deg, rgba(255, 99, 71, 1), rgba(26, 26, 77, 1));
+      background-attachment: fixed;
+}
+header {text-align: center;
+        color: white;
+        font-size: 30px;
+}
+.btn-container {background-color:  rgba(255, 99, 71, 1);
+                display: flex;
+                justify-content: space-between;
+}
+ .btn-container button {height: 60px;
+                        border: none;
+                        width: 33%;
+                        border-left: 3px solid white;
+                        outline: none;
+                        font-size: 24px;
+                        background-color: unset;
+                        box-sizing: border-box;
+                        color: rgba(26, 26, 77, 1);
+}
+.btn-container button:nth-child(1) {border-left: none;
+}
+ .btn-container button:hover,
+ .btn-container button.active {transition: .2s linear;
+                               color: white;
+                               font-size: 30px;
+}
+ .part-two .shapes .shape,
+ .part-two .shapes .shape.not-active {display: none;  
+                                      transform: translateX(0%);
+}
+ .part-two .shapes .shape.active {display: block;
+                                  animation: animateShow 1s linear;
+}
+.shape .shape-input {width: 600px;
+                      height: 60px;
+                      background-color: unset;
+                      border: 2px solid white;
+                      color: white;
+                      margin-top: 40px;
+                      border-radius: 5px;
+                      font-size: 16px;
+                      padding-left: 30px;
+                      outline: none;
+}
+.shape button,
+.shape .add-ons select  {width: 200px;
+               height: 50px;
+               background-color: unset;
+               border: 2px solid white;
+               color: white;
+               margin-top: 40px;
+               border-radius: 5px;
+               outline: none;
+}
+.shape .creation {display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  flex-direction: column;
+}
+.shape .content {padding: 50px;
+}
+label {margin: 0 10px;
+       color: white;
+}
+@keyframes animateShow {
+0% {
+opacity: 0;
+}
+100% {
+opacity: 1;
+}
+}
+
+

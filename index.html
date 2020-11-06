@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" custom="width=device-width, initial-scale=1.0">
+    <title>SVG Shapes</title>
+    <link rel="stylesheet" href="../SVG-Shape-Generator/index.css">
+</head>
+<body>
+    <header>
+        <h1>SVG Shapes Generator</h1>
+    </header>
+    <main>
+            <div class="container part part-one">
+                
+                <!-- the button container -->
+                <div class="btn-container">
+                    <button class="active"> Random </button>
+                    <button>    Perfect </button>
+                    <button> Custom </button>
+                </div>
+                <!-- ends here -->
+
+            </div>
+
+            <!-- the custom container section -->
+            <div class="container part part-two">
+                
+                <!-- container raps all shapes -->
+                <div class="shapes">
+                    <!-- each shapes - first -->
+                    <div class="active random shape">
+                        <!-- shapes creation controller -->
+                        <div class="creation creationR">
+                            <select id="random-input" class="shape-input">
+                              <option value="circle">circle</option>
+                              <option value="square">square</option>
+                              <option value="ellipse">ellipse</option>
+                              <option value="rectangle">rectangle</option>
+                              <option value="triangle">triangle</option>
+                            </select>
+                            <label for="random-input"></label>
+                            <button id="addNewR">Create Shape</button>
+                        </div>
+                        <!-- shape container - where shapes stay -->
+                        <div class="content" id="contentR"></div>
+                    </div>
+
+                    <!-- each shapes - second -->
+                    <div class="perfect shape">
+                        <!-- shapes creation controller -->
+                        <div class="creation creationP">
+                            <select id="perfect-input" class="shape-input">
+                              <option value="circle">circle</option>
+                              <option value="square">square</option>
+                              <option value="ellipse">ellipse</option>
+                              <option value="rectangle">rectangle</option>
+                              <option value="triangle">triangle</option>
+                              <option value="pentagon">pentagon</option>
+                              <option value="hexagon">hexagon</option>
+                              <option value="parallelogram">paralellogram</option>
+                              <option value="trapezium">trapezium</option>
+                              <option value="rhombus">Kite/Rhombus</option>
+                            </select>
+                            <label for="random-input"></label>
+                            <button id="addNewP">Create Shape</button>
+                        </div>
+                        <!-- shape container - where shapes stay -->
+                        <div class="content" id="contentP"></div>
+                    </div>
+                    
+                    <!-- each shapes - third -->
+                    <div class="custom shape">
+                        <!-- shapes creation controller -->
+                        <div class="creation creationP">
+                            <select id="custom-input" class="shape-input">
+                              <option value="circle">circle</option>
+                              <option value="square">square</option>
+                              <option value="ellipse">ellipse</option>
+                              <option value="rectangle">rectangle</option>
+                              <option value="triangle">triangle</option>
+                              <option value="pentagon">pentagon</option>
+                              <option value="hexagon">hexagon</option>
+                              <option value="parallelogram">paralellogram</option>
+                              <option value="trapezium">trapezium</option>
+                              <option value="rhombus">Kite/Rhombus</option>
+                            </select>
+                            <label for="custom-input"></label>
+                            <!-- shapes creation extra custom controllers -->
+                            <div class="add-ons">
+                                <label for="color-input">Fill Color:</label>
+                                <select id="color-input">
+                                  <option value="white">White</option>
+                                  <option value="black">Black</option>
+                                  <option value="yellow">Yellow</option>
+                                  <option value="green">Green</option>
+                                  <option value="blue">Blue</option>
+                                  <option value="lime">Lime</option>
+                                  <option value="red">Red</option>
+                                  <option value="violet">Violet</option>
+                                  <option value="pink">Pink</option>
+                                  <option value="cyan">Cyan</option>
+                                </select>
+                                <label for="stroke-color-input">Stroke Color:</label>
+                                <select id="stroke-color-input">
+                                    <option value="white">White</option>
+                                    <option value="black">Black</option>
+                                    <option value="yellow">Yellow</option>
+                                    <option value="green">Green</option>
+                                    <option value="blue">Blue</option>
+                                    <option value="lime">Lime</option>
+                                    <option value="red">Red</option>
+                                    <option value="violet">Violet</option>
+                                    <option value="pink">Pink</option>
+                                    <option value="cyan">Cyan</option>
+                                  </select>
+                                  <label for="stroke-width-input">Stroke Width:</label>
+                                <select id="stroke-width-input">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+                            <button id="addNewC">Create Shape</button>
+                        </div>
+                        <!-- shape container - where shapes stay -->
+                        <div class="content" id="contentC"></div>
+                    </div>
+                
+                </div>
+            </div>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="../SVG-Shape-Generator/app.js"></script>
+</body>
+</html>
