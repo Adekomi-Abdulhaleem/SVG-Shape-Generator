@@ -685,7 +685,6 @@
             document.getElementById("contentC").appendChild(svg1);
         
             });
-            rect()
 
 
             const circle = (() => {
@@ -1083,7 +1082,6 @@
                                             document.getElementById("contentC").appendChild(svg10);
                                             
                                             });
-                                            rhombus()
 
 
 
